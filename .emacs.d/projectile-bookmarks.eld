@@ -1,0 +1,1 @@
+("~/hotcode/mobiletest/" "~/git/my-dr-frontend/" "~/git/dianrong-main/" "~/hotcode/nodeschool/goingnative/myaddon/")
