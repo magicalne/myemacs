@@ -49,7 +49,7 @@
 (define-key web-mode-map (kbd "C-n") 'web-mode-tag-match);;jshint
 
 ;;color-theme
-(add-to-list 'load-path "~/hotcode/emacs/color-theme-6.6.0")
+;;(add-to-list 'load-path "~/hotcode/emacs/color-theme-6.6.0")
 (require 'color-theme)			
 (eval-after-load "color-theme"
   '(progn
