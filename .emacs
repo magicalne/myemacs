@@ -131,3 +131,6 @@
 ;;tern.js
 (autoload 'tern-mode "tern.el" nil t)
 (add-hook 'js2-mode-hook (lambda () (tern-mode t)))
+
+;;autopair
+(autopair-global-mode)
