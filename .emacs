@@ -18,6 +18,8 @@
 (setq make-backup-files nil) ;no backup file
 ;; Show line-number
 (global-linum-mode t)
+
+
 ;;web-mode setting
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
@@ -50,7 +52,7 @@
 
 ;;color-theme
 ;;(add-to-list 'load-path "~/hotcode/emacs/color-theme-6.6.0")
-(require 'color-theme)			
+;(require 'color-theme)			
 (eval-after-load "color-theme"
   '(progn
      (color-theme-initialize)
@@ -62,16 +64,7 @@
 ;js2-mode
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 (add-hook 'js-mode-hook 'js2-minor-mode)
-(add-hook 'js2-mode-hook 'ac-js2-mode)
 
-;;useing paredit (which build-in elisp) with javascript
-;(define-key js-mode-map "{" 'paredit-open-curly)
-;(define-key js-mode-map "}" 'paredit-close-curly-and-newline)
-;;indent
-;(custom-set-variables  
-; '(js2-basic-offset 2)  
-; '(js2-bounce-indent-p t)
-;)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -129,8 +122,19 @@
 (projectile-global-mode)
 
 ;;tern.js
-(autoload 'tern-mode "tern.el" nil t)
+;;(autoload 'tern-mode "tern.el" nil t)
 (add-hook 'js2-mode-hook (lambda () (tern-mode t)))
+(eval-after-load 'tern
+   '(progn
+      (require 'tern-auto-complete)
+      (tern-ac-setup)))
 
 ;;autopair
 (autopair-global-mode)
+
+;;yasnippet
+(yas-global-mode 1)
+
+;;auto-complete
+(ac-config-default)
+(ac-set-trigger-key "M-/");(ac-set-trigger-key "M-/")
