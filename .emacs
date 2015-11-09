@@ -1,5 +1,3 @@
-(add-to-list 'load-path "~/hotcode/emacs")
-
 ;;general settings
 (setq inhibit-startup-message t) ;hide statup page
 (show-paren-mode t) ;show parenthis
@@ -51,7 +49,6 @@
 (define-key web-mode-map (kbd "C-n") 'web-mode-tag-match);;jshint
 
 ;;color-theme
-;;(add-to-list 'load-path "~/hotcode/emacs/color-theme-6.6.0")
 ;(require 'color-theme)			
 (eval-after-load "color-theme"
   '(progn
