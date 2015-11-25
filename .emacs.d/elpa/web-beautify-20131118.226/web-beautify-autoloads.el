@@ -5,7 +5,7 @@
 
 ;;;### (autoloads (web-beautify-js-buffer web-beautify-js web-beautify-css-buffer
 ;;;;;;  web-beautify-css web-beautify-html-buffer web-beautify-html)
-;;;;;;  "web-beautify" "web-beautify.el" (21955 30620 817491 769000))
+;;;;;;  "web-beautify" "web-beautify.el" (22043 23250 207548 132000))
 ;;; Generated autoloads from web-beautify.el
 
 (autoload 'web-beautify-html "web-beautify" "\
@@ -46,8 +46,8 @@ Format the current buffer according to the js-beautify command.
 
 ;;;***
 
-;;;### (autoloads nil nil ("web-beautify-pkg.el") (21955 30620 950250
-;;;;;;  776000))
+;;;### (autoloads nil nil ("web-beautify-pkg.el") (22043 23250 245990
+;;;;;;  194000))
 
 ;;;***
 

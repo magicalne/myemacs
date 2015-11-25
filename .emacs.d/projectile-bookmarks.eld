@@ -1,1 +1,1 @@
-("~/hotcode/mobiletest/" "~/git/my-dr-frontend/" "~/git/dianrong-main/" "~/hotcode/nodeschool/goingnative/myaddon/")
+("~/dr/git/mission-impossible/" "~/mygit/hello-ruleengine/" "~/mygit/hello-ember/" "~/mygit/react-tutorial/" "~/mygit/hello-react-webpack/" "~/mygit/hello-scala/" "~/opensource/react/" "~/dr/git/morpheus/" "~/dr/git/workflow/")
